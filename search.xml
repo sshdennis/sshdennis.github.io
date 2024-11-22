@@ -119,6 +119,9 @@
 </ul>
 <h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><p>Hexo 是一款高效又靈活的靜態網站生成器，不論你是想建立一個技術部落格，還是個人作品集，Hexo 都能滿足需求。希望這篇教學能幫助你快速上手，打造屬於自己的網站！如果你還有其他問題或需求，歡迎在留言區分享你的想法！</p>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>[Hexo] 如何使用 Draft 機制高效管理文章</title>
@@ -180,5 +183,8 @@
 </ol>
 <p>如果你正在用 Hexo 撰寫內容，Draft 機制將成為你不可或缺的好幫手！</p>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>
