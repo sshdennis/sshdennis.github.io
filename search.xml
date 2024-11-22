@@ -1,32 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/10/29/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>[Hexo] 使用 Hexo + GitHub Pages 架設個人 Blog</title>
+    <url>/Hexo-%E4%BD%BF%E7%94%A8-Hexo-GitHub-Pages-%E6%9E%B6%E8%A8%AD%E5%80%8B%E4%BA%BA-Blog/</url>
+    <content><![CDATA[<h1 id="什麼是-Hexo？"><a href="#什麼是-Hexo？" class="headerlink" title="什麼是 Hexo？"></a>什麼是 Hexo？</h1><p><a href="https://hexo.io/zh-tw/">Hexo</a> 是一款基於 Node.js 的靜態網站生成器，以簡單、快速且強大的設計聞名。它特別適合用於建立技術部落格或個人網站，透過支援 Markdown 語法，讓使用者可以輕鬆撰寫並發佈內容。此外，Hexo 提供了大量的佈景主題和外掛，讓網站能快速打造個性化的外觀與功能。</p>
+<h1 id="什麼是-Github？"><a href="#什麼是-Github？" class="headerlink" title="什麼是 Github？"></a>什麼是 Github？</h1><p><a href="https://github.com/">GitHub</a> 只要是工程師就一定不陌生，它是是目前全球最受歡迎的程式碼託管與版本控制平台，主要用於儲存和管理軟體開發專案。它結合了 Git 的版本控制功能與社群協作工具，讓開發者可以輕鬆管理程式碼、追蹤變更，並與其他開發者合作完成專案。</p>
+<h1 id="為什麼選擇-Github-搭配-Hexo-來建立個人網站？"><a href="#為什麼選擇-Github-搭配-Hexo-來建立個人網站？" class="headerlink" title="為什麼選擇 Github 搭配 Hexo 來建立個人網站？"></a>為什麼選擇 Github 搭配 Hexo 來建立個人網站？</h1><p>選擇 GitHub 搭配 Hexo 來建立個人網站是一個非常受歡迎的組合，因為它具備多項優勢，特別適合技術 Blog 或簡單的個人網站。以下是主要原因和優勢：</p>
+<ol>
+<li><p>免費的網站託管服務</p>
+<p> <strong>GitHub Pages</strong> 提供免費的網站託管，特別適合靜態網站（如 Hexo 生成的網站）。</p>
+<ul>
+<li>成本低：不用支付伺服器費用，只需擁有一個 GitHub 帳號即可啟用。</li>
+<li>簡單易用：只需將網站的靜態檔案部署到 GitHub Pages，系統會自動生成並上線網站。</li>
+</ul>
+</li>
+<li><p>Hexo 使用簡單</p>
+<p> Hexo 是一款輕量級、速度快的靜態網站生成器</p>
+<ul>
+<li>支援 Markdown：用戶可以用簡單的 Markdown 語法撰寫文章，大幅提高寫作效率。</li>
+<li>生成速度快：即使是大量的文章，Hexo 也能快速生成靜態檔案。</li>
+<li>可擴展性強：<strong>提供多種佈景主題與外掛</strong>，可以輕鬆定製網站功能和外觀。</li>
+</ul>
+</li>
+<li><p>GitHub 與 Hexo 的完美結合</p>
+<p> Git 的版本控制功能</p>
+<ul>
+<li>在開發網站時，Git 的版本控制可以幫助管理每次變更。</li>
+<li>如果不小心修改錯誤，Git 可以讓你快速恢復到之前的版本，降低風險。</li>
+</ul>
+<p> 部署流程簡單</p>
+<ul>
+<li>Hexo 提供 hexo deploy 指令，搭配 Hexo 的 Git 部署外掛，網站的靜態檔案可以一鍵部署到 GitHub Pages，非常方便。</li>
+</ul>
+</li>
+<li><p>穩定與安全</p>
+<p> GitHub Pages 的穩定性和安全性是許多其他託管平台無法比擬的：</p>
+<ul>
+<li>高可靠性：GitHub 使用全球分佈的伺服器，確保網站在全球各地的訪問速度與穩定性。</li>
+<li>自動 SSL 憑證：所有 GitHub Pages 網站都自動配置了 HTTPS，確保網站的安全性。</li>
+</ul>
+</li>
+<li><p>擁有專屬的域名與作品展示</p>
+<ul>
+<li>GitHub Pages 支援自定義域名，讓你擁有一個專屬的網站地址（如 yourname.com）。不過需要另外購買。</li>
+<li>透過 Hexo，能輕鬆建立作品集、技術部落格或個人品牌網站，展示技能與成果，特別對求職和建立專業形象非常有幫助。</li>
+</ul>
+</li>
+</ol>
+<span id="more"></span>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h1 id="安裝前的準備工具"><a href="#安裝前的準備工具" class="headerlink" title="安裝前的準備工具"></a>安裝前的準備工具</h1><p>在開始安裝 Hexo 之前，需要先準備以下工具：<br>1.	<a href="https://git-scm.com/">Git</a>：版本控制工具，用於管理專案代碼並進行部署。<br>2.	<a href="https://github.com/nvm-sh/nvm">NVM（Node Version Manager）</a>：一個 Node.js 的版本管理工具，方便切換不同版本的 Node.js。<br>3.	Node.js：Hexo 是基於 Node.js 的，因此需要安裝這個環境。建議使用 <strong>NVM</strong> 安裝，確保可以輕鬆切換 Node.js 的版本。<br>4.	<a href="https://code.visualstudio.com/">Visual Studio Code</a>：一款熱門的編輯器，用於編輯和管理 Hexo 專案中的檔案。可安裝 Markdown 也可以使用其他的文字編輯工具取代</p>
+<h1 id="安裝-Hexo"><a href="#安裝-Hexo" class="headerlink" title="安裝 Hexo"></a>安裝 Hexo</h1><p>準備好上述工具後，開啟終端機，透過 npm 安裝 Hexo：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>安裝完成後，你可以透過使用以下指令確認 Hexo 是否已正確安裝。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h1 id="建立-GitHub-專案"><a href="#建立-GitHub-專案" class="headerlink" title="建立 GitHub 專案"></a>建立 GitHub 專案</h1><p>Hexo 預設支援將靜態網站部署到 GitHub Pages，因此你需要先建立一個 GitHub Repository：</p>
+<ol>
+<li>登入 GitHub。</li>
+<li>點擊右上角的「+」按鈕，選擇 New repository。</li>
+<li>輸入專案名稱（例如：username.github.io），一定要是 <code>.github.io</code> 結尾</li>
+<li>選擇「Public」，並點擊 Create repository。</li>
+</ol>
+<h1 id="建立-Hexo-專案"><a href="#建立-Hexo-專案" class="headerlink" title="建立 Hexo 專案"></a>建立 Hexo 專案</h1><p>在 GitHub Repository 建立好後，按照以下步驟建立並初始化 Hexo 專案：</p>
+<ol>
+<li><p>使用 Git 將 repository clone 到本機：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git clone git@github.com:sshdennis/sshdennis.github.io.git</span><br></pre></td></tr></table></figure>
+<ul>
+<li>sshdennis 記得替換掉</li>
+</ul>
+</li>
+<li><p>初始化 Hexo 專案：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init sshdennis.github.io</span><br><span class="line">$ cd sshdennis.github.io</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安裝所需的套件：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>啟動 Hexo server 並預覽網站：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在瀏覽器輸入 <a href="http://localhost:4000，即可看到你的">http://localhost:4000，即可看到你的</a> Hexo 網站</li>
+</ul>
+</li>
+<li><p>安裝 Hexo 部署外掛，方便將網站內容推送到 GitHub Pages：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清理 cache 並 deploy 網站到 GitHub Pages：</p>
+ <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Hexo-資料夾與檔案"><a href="#Hexo-資料夾與檔案" class="headerlink" title="Hexo 資料夾與檔案"></a>Hexo 資料夾與檔案</h1><p>Hexo 的專案資料夾包含多個重要目錄與檔案：</p>
+<ul>
+<li>_config.yml<ul>
+<li>主配置檔案，用於設定網站資訊、路徑與外掛等。</li>
+</ul>
+</li>
+<li>source&#x2F;<ul>
+<li>存放網站內容，如文章與頁面。</li>
+</ul>
+</li>
+<li>public&#x2F;<ul>
+<li>網站的靜態檔案，部署時會生成此目錄內容。</li>
+</ul>
+</li>
+</ul>
+<h1 id="Hexo-theme-佈景主題"><a href="#Hexo-theme-佈景主題" class="headerlink" title="Hexo theme 佈景主題"></a>Hexo theme 佈景主題</h1><p>Hexo 提供了多種佈景主題，讓你的網站可以有不同的風格與功能。以下是兩個熱門的選擇：</p>
+<ul>
+<li><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a><ul>
+<li>設計精美且功能強大，適合用於技術部落格。</li>
+<li>提供詳細的安裝與配置文件，適合新手快速上手。</li>
+</ul>
+</li>
+<li><a href="https://github.com/next-theme/hexo-theme-next">NexT</a><ul>
+<li>簡約大方的設計，功能模組化，方便進行客製化調整。</li>
+<li>支援多種社群分享按鈕與外掛。</li>
+</ul>
+</li>
+</ul>
+<h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><p>Hexo 是一款高效又靈活的靜態網站生成器，不論你是想建立一個技術部落格，還是個人作品集，Hexo 都能滿足需求。希望這篇教學能幫助你快速上手，打造屬於自己的網站！如果你還有其他問題或需求，歡迎在留言區分享你的想法！</p>
 ]]></content>
   </entry>
   <entry>
-    <title>qq</title>
-    <url>/2024/10/29/qq/</url>
-    <content><![CDATA[<h1 id="第一篇文章"><a href="#第一篇文章" class="headerlink" title="第一篇文章"></a>第一篇文章</h1><p>測試一下</p>
-<p>wd</p>
-<p>d<br>wdwd</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+    <title>[Hexo] 如何使用 Draft 機制高效管理文章</title>
+    <url>/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>在使用 Hexo 撰寫技術部落格或個人網站時，你可能會遇到這樣的情況：</p>
+<p>某些文章還在構思階段，不希望它們被公開，但你又需要方便地預覽和編輯內容。針對這樣的需求，Hexo 提供了一個方便的 Draft 機制，讓你在撰寫未完成的文章時，有更多的彈性與控制。</p>
+<h1 id="什麼是-Hexo-的-Draft-機制？"><a href="#什麼是-Hexo-的-Draft-機制？" class="headerlink" title="什麼是 Hexo 的 Draft 機制？"></a>什麼是 Hexo 的 Draft 機制？</h1><p>在 Hexo 中，Draft（草稿）是尚未完成的文章，這些文章會存放於 source&#x2F;_drafts 目錄下，而不是通常的 source&#x2F;_posts 目錄。</p>
+<p>這種機制帶來了幾個明顯的優勢：</p>
+<ol>
+<li>避免誤 deploy 未完成的文章：草稿不會被編譯到網站的靜態檔案，也不會被deploy 到 GitHub Pages。</li>
+<li>方便集中管理未完成內容：草稿集中存放，讓你清楚知道哪些文章還在撰寫中。</li>
+<li>支援即時預覽：Hexo 提供 –draft 參數，讓你能在本地編輯草稿時即時預覽。</li>
+</ol>
+<h1 id="建立草稿"><a href="#建立草稿" class="headerlink" title="建立草稿"></a>建立草稿</h1><p>要建立一篇新的草稿，可以使用以下指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new draft &lt;title&gt;</span><br></pre></td></tr></table></figure>
 
-<p>–</p>
+<p>這將在 source&#x2F;_drafts 目錄下建立一個新的 Markdown 檔案，檔名會以 <code>&lt;title&gt;.md</code> 命名。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new draft &quot;my-first-draft&quot;</span><br></pre></td></tr></table></figure>
+
+<p>生成的檔案路徑為：<code>source/_drafts/my-first-draft.md</code>，內容會包含 Hexo 預設的 YAML 前置資料（Front Matter），例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: my-first-draft</span><br><span class="line">date: 2024-11-22 12:00:00</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>可以立即開始編輯這篇草稿。</p>
+<span id="more"></span>
+
+<h1 id="本機預覽草稿"><a href="#本機預覽草稿" class="headerlink" title="本機預覽草稿"></a>本機預覽草稿</h1><p>在撰寫草稿的過程中，你可能需要即時檢查文章的排版與效果。雖然 hexo generate 不會將草稿編譯到 public 目錄，但 Hexo 提供了 –draft 參數，讓你可以在本地預覽草稿：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server --draft</span><br></pre></td></tr></table></figure>
+<ul>
+<li>啟用此指令後，Hexo 會包含 source&#x2F;_drafts 目錄下的文章，並在本地伺服器中顯示草稿內容。</li>
+<li>透過 Hexo 的瀏覽器同步功能（如 hexo-browsersync 外掛），你可以在編輯文章的同時即時看到變更結果。</li>
+</ul>
+<h1 id="發佈草稿"><a href="#發佈草稿" class="headerlink" title="發佈草稿"></a>發佈草稿</h1><p>當你完成草稿並準備將其轉為正式文章時，可以使用以下指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo publish &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;title&gt;</code> 是草稿檔案名稱（不包含 .md 副檔名）。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo publish &quot;my-first-draft&quot;</span><br></pre></td></tr></table></figure>
+
+<p>這個指令會執行以下操作：</p>
+<ol>
+<li>將草稿檔案從 source&#x2F;_drafts 移動到 source&#x2F;_posts 目錄。</li>
+<li>同時保留檔案的名稱與內容。</li>
+</ol>
+<p>接著，你可以像管理普通文章一樣，使用 hexo generate 和 hexo deploy 指令將它部署到 GitHub Pages。</p>
+<h1 id="反悔草稿"><a href="#反悔草稿" class="headerlink" title="反悔草稿"></a>反悔草稿</h1><p>如果你已經將草稿發佈為正式文章，但後來希望重新將其改回草稿，這時只需手動將檔案移回 source&#x2F;_drafts 目錄即可。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mv source/_posts/my-first-draft.md source/_drafts/</span><br></pre></td></tr></table></figure>
+
+<p>此操作不需要執行額外的指令，Hexo 會自動辨識草稿與正式文章。</p>
+<h1 id="為什麼要使用-Draft-機制？"><a href="#為什麼要使用-Draft-機制？" class="headerlink" title="為什麼要使用 Draft 機制？"></a>為什麼要使用 Draft 機制？</h1><p>Draft 機制在管理內容時，具有以下幾個實用優勢：</p>
+<ol>
+<li>避免未完成的內容公開<br> 撰寫部落格時，難免會有文章未完成的情況，Draft 機制確保這些內容不會意外出現在你的網站上。</li>
+<li>同時管理多篇草稿<br> 你可以同時撰寫多篇文章，並挑選已完成的內容發佈，而不影響其他草稿。</li>
+<li>即時預覽與快速迭代<br> 搭配 –draft 參數與瀏覽器同步外掛，能實現邊編輯邊預覽的效果，提升編輯效率。</li>
+</ol>
+<h1 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h1><p>Hexo 的 Draft 機制是一個靈活且實用的功能，適合需要撰寫多篇內容的部落格作者或技術分享者使用。透過這個機制，你可以：</p>
+<ol>
+<li>集中管理未完成文章，避免誤部署。</li>
+<li>高效編輯與即時預覽，提升工作流效率。</li>
+<li>控制文章的發佈時機，確保每篇文章都在最好的狀態下公開。</li>
+</ol>
+<p>如果你正在用 Hexo 撰寫內容，Draft 機制將成為你不可或缺的好幫手！</p>
 ]]></content>
   </entry>
 </search>
