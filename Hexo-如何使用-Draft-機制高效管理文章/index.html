@@ -17,12 +17,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"sshdennis.net","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.sshdennis.net","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="在使用 Hexo 撰寫技術部落格或個人網站時，你可能會遇到這樣的情況： 某些文章還在構思階段，不希望它們被公開，但你又需要方便地預覽和編輯內容。針對這樣的需求，Hexo 提供了一個方便的 Draft 機制，讓你在撰寫未完成的文章時，有更多的彈性與控制。 什麼是 Hexo 的 Draft 機制？在 Hexo 中，Draft（草稿）是尚未完成的文章，這些文章會存放於 source&#x2F;_draf">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Hexo] 如何使用 Draft 機制高效管理文章">
-<meta property="og:url" content="https://sshdennis.net/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:url" content="https://blog.sshdennis.net/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="丹尼斯的筆記隨筆">
 <meta property="og:description" content="在使用 Hexo 撰寫技術部落格或個人網站時，你可能會遇到這樣的情況： 某些文章還在構思階段，不希望它們被公開，但你又需要方便地預覽和編輯內容。針對這樣的需求，Hexo 提供了一個方便的 Draft 機制，讓你在撰寫未完成的文章時，有更多的彈性與控制。 什麼是 Hexo 的 Draft 機制？在 Hexo 中，Draft（草稿）是尚未完成的文章，這些文章會存放於 source&#x2F;_draf">
 <meta property="og:locale" content="zh_TW">
@@ -33,10 +33,10 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://sshdennis.net/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/">
+<link rel="canonical" href="https://blog.sshdennis.net/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://sshdennis.net/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/","path":"Hexo-如何使用-Draft-機制高效管理文章/","title":"[Hexo] 如何使用 Draft 機制高效管理文章"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://blog.sshdennis.net/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/","path":"Hexo-如何使用-Draft-機制高效管理文章/","title":"[Hexo] 如何使用 Draft 機制高效管理文章"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>[Hexo] 如何使用 Draft 機制高效管理文章 | 丹尼斯的筆記隨筆</title>
@@ -202,7 +202,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://sshdennis.net/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/">
+    <link itemprop="mainEntityOfPage" href="https://blog.sshdennis.net/Hexo-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Draft-%E6%A9%9F%E5%88%B6%E9%AB%98%E6%95%88%E7%AE%A1%E7%90%86%E6%96%87%E7%AB%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
